@@ -27,16 +27,16 @@ function Grid(N,scl,edge) {
     fill(255);
     noStroke();
   	textSize(30);
-    var xPos = this.nPxFull - 240;
-    var yPos = this.nPxFull - 13;
+    let xPos = this.nPxFull - 240;
+    let yPos = this.nPxFull - 13;
   	text('SCORE:   '+score, xPos, yPos);
   	// print level
     text('LEVEL '+level, xPos, 35);
   }
 
   this.imgToCell = function(img,x,y) {
-    var xPos = x*this.scl - this.scl + this.edge;
-    var yPos = y*this.scl - this.scl + this.edge;
+    let xPos = x*this.scl - this.scl + this.edge;
+    let yPos = y*this.scl - this.scl + this.edge;
     image(img, xPos, yPos);
   }
 
@@ -44,8 +44,8 @@ function Grid(N,scl,edge) {
   // this.paintCell = function(x,y) {
   //   if (x>this.N || x<1) { throw "x value illegal!";}
   //   if (y>this.N || y<1) { throw "y value illegal!";}
-  //   var xPos = x*this.scl - this.scl + edge;
-  //   var yPos = y*this.scl - this.scl + edge;
+  //   let xPos = x*this.scl - this.scl + edge;
+  //   let yPos = y*this.scl - this.scl + edge;
   //   rect(xPos, yPos, this.scl, this.scl);
   // }
 }

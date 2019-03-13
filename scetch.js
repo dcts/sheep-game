@@ -1,25 +1,25 @@
 // GLOBAL VARIABLES
-var g;							// grid object
-var sheep;					// sheep object
-var food;						// food object
-var start = 0;			// 0: pause, 1: start game
-var instr;					// instructions image
+let g;							// grid object
+let sheep;					// sheep object
+let food;						// food object
+let start = 0;			// 0: pause, 1: start game
+let instr;					// instructions image
 
 // canvas settings
-var N = 10;					// nbr of cells each row and col
-var scl = 61;				// scale of each cell
-var edge = 50;			// thickness of edge of canvas
+let N = 10;					// nbr of cells each row and col
+let scl = 61;				// scale of each cell
+let edge = 50;			// thickness of edge of canvas
 
 // level settings
-var score;						// current score
-var level;						// current level
-var frmCount;					// counts each frame (determine speed)
-var speed;						// current speed of movement (parrot)
-var scoreLv2 = 10;		// score needed for reaching Lv2
-var scoreLv3 = 15;		//           ...for reaching Lv3
-var speedLv1 = 40;		// speed in lv1
-var speedLv2 = 23;			//    ...in lv2
-var speedLv3 = 5;			//    ...in lv3
+let score;						// current score
+let level;						// current level
+let frmCount;					// counts each frame (determine speed)
+let speed;						// current speed of movement (parrot)
+let scoreLv2 = 10;		// score needed for reaching Lv2
+let scoreLv3 = 15;		//           ...for reaching Lv3
+let speedLv1 = 40;		// speed in lv1
+let speedLv2 = 23;			//    ...in lv2
+let speedLv3 = 5;			//    ...in lv3
 
 
 
@@ -27,7 +27,8 @@ function setup() {
 	// GRAPHIC SETTINGS
 	g = new Grid(N, scl, edge);
 	// create canvas
-	createCanvas(g.nPxFull, g.nPxFull);
+	let myCanvas = createCanvas(g.nPxFull, g.nPxFull);
+	myCanvas.parent("main"); /* display scetch in html element with id "main"*/
 	// noLoop();
 	instr = loadImage("data/instructions.png");
 	// initialize players and incentives

@@ -11,13 +11,13 @@ function Parrot(x,y,g) {
 
   // move towards Sheep
   this.makeMove = function(sheep) {
-  	var xDiff = (sheep.x - this.x);
-  	var yDiff = (sheep.y - this.y);
+  	let xDiff = (sheep.x - this.x);
+  	let yDiff = (sheep.y - this.y);
   	if (Math.abs(xDiff)>=Math.abs(yDiff)) {
-  		var change = Math.min(Math.max(xDiff,-1),1);
+  		let change = Math.min(Math.max(xDiff,-1),1);
   		this.x = this.x+change;
   	} else {
-  		var change = Math.min(Math.max(yDiff,-1),1);
+  		let change = Math.min(Math.max(yDiff,-1),1);
   		this.y = this.y+change;
   	}
   }
