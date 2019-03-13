@@ -30,7 +30,7 @@ function setup() {
 	let myCanvas = createCanvas(g.nPxFull, g.nPxFull);
 	myCanvas.parent("main"); /* display scetch in html element with id "main"*/
 	// noLoop();
-	instr = loadImage("data/instructions.png");
+	instr = loadImage("res/instructions.png");
 	// initialize players and incentives
 	initialize();
 }
@@ -95,13 +95,13 @@ function mousePressed() {
 function checkLevel() {
 	if (score===scoreLv2 && speed===speedLv1) {
 		console.log('LEVEL2 reached');
-		parrot.img = loadImage("data/parrotLv2_61.png");
+		parrot.img = loadImage("res/parrotLv2_61.png");
 		level = 2;
 		frmCount = 0;
 		speed = speedLv2;
 	} else if (score===scoreLv3 && speed===speedLv2) {
 		console.log('LEVEL3 reached');
-		parrot.img = loadImage("data/parrotLv3_61.png")
+		parrot.img = loadImage("res/parrotLv3_61.png")
 		level = 3;
 		frmCount = 0;
 		speed = speedLv3;
