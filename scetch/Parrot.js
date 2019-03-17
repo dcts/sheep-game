@@ -1,6 +1,6 @@
 
 function Parrot(x,y,g) {
-  this.img = loadImage("res/parrotLv1_61.png");
+  this.img = loadImage("scetch/res/parrotLv1_61.png");
   this.x = x;
   this.y = y;
   this.g = g;

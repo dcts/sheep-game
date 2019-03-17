@@ -1,6 +1,6 @@
 
 function Sheep(x,y,g) {
-  this.img = loadImage("res/sheep61.png");
+  this.img = loadImage("scetch/res/sheep61.png");
   this.x = x;
   this.y = y;
   this.g = g;

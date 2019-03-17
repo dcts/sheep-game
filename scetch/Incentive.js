@@ -1,6 +1,6 @@
 
 function Incentive(x,y,g) {
-  this.img = loadImage("res/quark61.png");
+  this.img = loadImage("scetch/res/quark61.png");
   this.x = x;
   this.y = y;
   this.g = g;
